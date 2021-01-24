@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        #title {
+            font-size: 24px;
+        }
+
+        #p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Choose Your Treats</h1>
+    <p id="description">We're going to send you your favourite treats! Fill out this quick form to get your treats.</p>
+    <form id="survey-form">
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name-label">First and Last Names:</label>
+            <input type="text" id="name-label" name="name" placeholder="Enter Name" required><br>
+            <label for="email-label">Email:</label>
+            <input type="text" id="email-label" name="email" placeholder="Enter Valid Email Address" required><br>
+            <label for="number-label">Age:</label>
+            <input type="number" id="number" name="number" placeholder="Enter Age" min="12" max="99"><br>
+            <label for="dropdown">Choose your main top treat:</label>
+            <select id="dropdown" name="treats">
+        </fieldset>
+
+        <fieldset>
+            <legend>What is your #1 favourite treat?</legend>
+            <option value="ice-cream">Ice Cream</option>
+            <option value="gummies">Gummies</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="potato-chips">Potato Chips</option>
+            <option value="sour-candies">Sour Candies</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Do you prefer sweet or savoury treats?</legend>
+            <input type="radio" id="sweet" name="treat-type" value="sweet">
+            <label for="sweet">Sweet</label><br>
+            <input type="radio" id="savoury" name="treat-type" value="savoury">
+            <label for="savoury">Savoury</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select all treat brands you are aware of:</legend>
+            <input type="checkbox" id="brand1" name="brand1" value="Allan">
+            <label for="brand1">Allan</label><br>
+            <input type="checkbox" id="brand2" name="brand2" value="Willie-Wonka">
+            <label for="brand2">Willie Wanka</label><br>
+            <input type="checkbox" id="brand3" name="brand3" value="Mars">
+            <label for="brand3">Mars</label>
+            <input type="checkbox" id="brand4" name="brand4" value="Cadbury">
+            <label for="brand4">Cadbury</label>
+            <input type="checkbox" id="brand5" name="brand5" value="Nestle">
+            <label for="brand5">Nestle</label>
+            <input type="checkbox" id="brand6" name="brand6" value="Hershey">
+            <label for="brand6">Hershey</label>
+        </fieldset>
+
+        <label for="comments">Tell us what makes a delicious treat:</label>
+        <textarea id="comments" name="comments" rows="3" cols="50">Your thoughts go here.</textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+
+
+</html>
