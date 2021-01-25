@@ -5,7 +5,7 @@
 <head>
     <style>
         #title {
-            font-size: 24px;
+            font-size: 32px;
             color: darkblue;
         }
 
@@ -21,20 +21,19 @@
 
 <body>
 
-    <h1 id="title">Treats Survey</h1><br>
+    <h1 id="title">Treats Survey</h1>
     <p id="description">We want to know all about your favourite treats!</p>
     <form id="survey-form">
 
         <fieldset>
             <legend>Contact Information</legend>
             <label for="name-label">First and Last Names:</label>
-            <input type="name" id="name-label" name="name" placeholder="Enter Name" aria-errormessage="invalid"
-                required><br>
+            <input type="name" id="name-label" name="name" placeholder="Enter Name" required><br>
             <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" placeholder="Enter Email" required><br>
             <label for="number-label">Age:</label>
             <input type="number" id="number" name="number" placeholder="Enter Age" min="12" max="99"><br>
-        </fieldset>
+        </fieldset><br>
 
         <fieldset>
             <legend>What is your #1 favourite treat?</legend>
@@ -45,7 +44,7 @@
                 <option value="potato-chips">Potato Chips</option>
                 <option value="sour-candies">Sour Candies</option>
             </select>
-        </fieldset>
+        </fieldset><br>
 
         <fieldset>
             <legend>Do you prefer sweet or savoury treats?</legend>
@@ -53,7 +52,7 @@
             <label for="sweet">Sweet</label><br>
             <input type="radio" id="savoury" name="treat-type" value="savoury">
             <label for="savoury">Savoury</label><br>
-        </fieldset>
+        </fieldset><br>
 
         <fieldset>
             <legend>Select all treat brands you are aware of:</legend>
@@ -69,10 +68,10 @@
             <label for="brand5">Nestle</label><br>
             <input type="checkbox" id="brand6" name="brand6" value="Hershey">
             <label for="brand6">Hershey</label>
-        </fieldset>
+        </fieldset><br>
 
         <label for="comments">Tell us what makes a delicious treat:</label>
-        <textarea id="comments" name="comments" rows="3" cols="50" placeholder="Share your thoughts."></textarea>
+        <textarea id="comments" name="comments" rows="1" cols="50" placeholder="Share your thoughts."></textarea>
 
         <input type="submit" value="Submit">
 
